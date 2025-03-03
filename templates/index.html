@@ -1,0 +1,546 @@
+{% extends 'parent.html' %}
+
+{% block title %}
+<title>Home</title>
+    
+{% endblock %}
+
+{% block main %}
+<main>
+    <section id="hero">
+        <h4>Trade-in-discount</h4>
+        <h2>Amazing Deals!</h2>
+        <p>Save more with coupons & upto 50% off!</p>
+        <button>Shop Now</button>
+    
+    </section>
+    
+    <section id="brand">
+    
+        <div class="row">
+            <img src="/static/img/1 (2).png " alt="">
+            <img src="/static/img/2 (2).png" alt="">
+            <img src="/static/img/3 (2).png" alt="">
+            <img src="/static/img/4.png" alt="">
+            <img src="/static/img/5.png" alt="">
+            <img src="/static/img/6.png" alt="">
+    
+    
+        </div>
+    </section>
+    
+    
+    <section id="feature" class="section-p1">
+    <div class="fe-box">
+        <img src="/static/img/f10.png" alt="">
+        <h6>Free Delhivery</h6>
+    </div>
+    
+    <div class="fe-box">
+        <img src="/static/img/f12.png" alt="">
+        <h6>Online Order</h6>
+    </div>
+    
+    <div class="fe-box">
+        <img src="/static/img/f11.png" alt="">
+        <h6>Save Money</h6>
+    </div>
+    
+    <div class="fe-box">
+        <img src="/static/img/f13.png" alt="">
+        <h6>Promotions</h6>
+    </div>
+    
+    <div class="fe-box">
+        <img src="/static/img/f15.png" alt="">
+        <h6>24/7 Support</h6>
+    </div>
+    </section>
+    
+    
+    <section id="products1" class="section-p1">
+        <h2>Our Featured Products</h2>
+        <hr>
+        <p>Here are some summer collections for you</p>
+        <div class="pro-container">
+            <div class="pro"onclick="addToCart('product1.jpg')">
+                
+               <img src="/static/img/1 (2).jpg" alt="">
+               <div class="des">
+                <span>Sparx</span>
+                <h5>Mens White Sneakers</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1100</h4>
+               </div>
+               <a href="cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+             <div class="pro" onclick="addToCart('product1.jpg')">
+               <img src="/static/img/31.jpg" href="/add_to_cart" alt="">
+               <div class="des">
+                <span>Redchief</span>
+                <h5>Mens Brown Sneakers</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1800</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/30.jpg"  alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5>Aesthatic Womens Bag</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹799</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/32.jpg" alt="">
+                <div class="des">
+                 <span>K-Store</span>
+                 <h5>Winter Caps</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹85</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/51.jpg"  alt="">
+                <div class="des">
+                 <span>H&M</span>
+                 <h5>Mens Straw Hat</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹115</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/f1.jpg" alt="">
+                <div class="des">
+                 <span>MAAX</span>
+                 <h5>Down Shoulder T-Shrits</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹315</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/f7.jpg" alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5>Linean Trouser</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹900</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/f8.jpg" alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5>Facfy Tops</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹1350</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+        </div>
+    
+    </section>
+    
+    <section id="Banner1">
+        <div class="">
+            <h4>MID SEASON SALE</h4>
+            <h1>Autumn Collection <br>
+                UP TO 20% Off </h1>
+                
+        </div>
+    </section>
+    
+    
+    <section id="products1" class="section-p1">
+        <h2>NEW ARRIVALS</h2>
+        <p>Explore Your New Arrivalls Here! </p>
+        <div class="pro-container">
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+               <img src="/static/img/n1.jpg" alt="">
+               <div class="des">
+                <span>Adidas</span>
+                <h5> Shoulder Shirts</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1500</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+               <img src="/static/img/n2.jpg" alt="">
+               <div class="des">
+                <span>Adidas</span>
+                <h5>Down grey T-Shirts</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1000</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n4.jpg" alt="">
+                <div class="des">
+                 <span>Adidas</span>
+                 <h5>Down T-Shirts</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹999</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n5.jpg" alt="">
+                <div class="des">
+                 <span>Adidas</span>
+                 <h5>Down Shoulder Shirts</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹3000</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n6.jpg" alt="">
+                <div class="des">
+                 <span>OGREA</span>
+                 <h5>shorts </h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹705</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n7.jpg" alt="">
+                <div class="des">
+                 <span>Adidas</span>
+                 <h5>Flopex Mens Shirt Jacket</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹1005</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n8.jpg" alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5> balck shirt</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹799</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/n3.jpg" alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5>Facfy top</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹899</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+        </div>
+    
+    </section>
+    
+    <section id="products1" class="section-p1">
+        <h2>Timeless Elegance</h2>
+        <hr>
+        <p>Discover The Perfect Watch for Every Ocassion</p>
+        <div class="pro-container">
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+               <img src="/static/img/1 (3).jpg" alt="">
+               <div class="des">
+                <span>Sparx</span>
+                <h5>Mens Watch</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1100</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+             
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/4.8.jpg" alt="">
+                <div class="des">
+                 <span>Westside</span>
+                 <h5>Aesthatic Watch</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹799</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/4.9.jpg" alt="">
+                <div class="des">
+                 <span>K-Store</span>
+                 <h5>focel Watch</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹85</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+         </div>
+    </section>
+    
+    <section id="products1" class="section-p1">
+    
+        <h2>"Step In Style"</h2>
+        <hr>
+        <p>"Discover Comfort And Fashion in Every Pair"</p>
+        <div class="pro-container">
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+               <img src="/static/img/ss1.jpg" alt="">
+               <div class="des">
+                <span>Sparx</span>
+                <h5>Mens White Sneakers</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1100</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+    
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+               <img src="/static/img/ss2.jpg" alt="">
+               <div class="des">
+                <span>Redchief</span>
+                <h5>Mens black shoes</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹1800</h4>
+               </div>
+               <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/ss3.jpg" alt="">
+                <div class="des">
+                 <span>Nike</span>
+                 <h5>lather shoes</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹799</h4>
+                </div>
+                <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+             <div class="pro" onclick="addToCart('product1.jpg')" >
+                <img src="/static/img/ss4.jpg" alt="">
+                <div class="des">
+                 <span>K-Store</span>
+                 <h5>Winter Caps</h5>
+                 <div class="star">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                 </div>
+                 <h4>₹85</h4>
+                </div>
+                <a href="cart"><i class="fal fa-shopping-cart cart"></i></a>
+             </div>
+         </div>
+    </section>
+    
+    
+    <section id="news-letter" class="section-p1">
+    <div class="newstext">
+        <h4>Sign in to place your order</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your E-mail address">
+        <button class="normal">Sign Up</button>
+    </div>
+    </section>
+
+
+    
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="/static/img/logo-removebg-preview 1.png" alt="K-STORE Logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> MG Road, Bengaluru 560001</p>
+            <p><strong>Phone:</strong> 080 9873456, +91 8766797413</p>
+            <p><strong>Timings:</strong> 10:00 AM - 10:00 PM, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="/about">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="/login">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="/contact">Help</a>
+        </div>
+        <div class="install">
+            <h4>Install App</h4>
+            <p>Download our app from the App Store or Google Play</p>
+            <div class="row">
+                <img src="/static/img/app.jpg" alt="App Store">
+                <img src="/static/img/play.jpg" alt="Google Play">
+            </div>
+            <p>Secure Payment Methods</p>
+            <img src="/static/img/pay.png" alt="Payment Methods">
+        </div>
+    </footer>
+</main>
+
+    
+{% endblock %}
+
+
+
+    

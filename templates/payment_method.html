@@ -1,0 +1,133 @@
+{% extends 'parent.html' %}
+
+{% block content %}
+
+<style>
+    .container {
+        max-width: 1600px;
+    }
+    .card {
+        border-radius: 12px;
+        border: none;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #343a40;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 600;
+        color: #495057;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .form-control {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        padding: 12px;
+        font-size: 16px;
+        transition: 0.3s ease-in-out;
+        background-color: #f8f9fa;
+    }
+    
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+        background-color: #ffffff;
+    }
+    
+    textarea.form-control {
+        resize: none;
+        height: 120px;
+    }
+    
+    .btn-primary, .btn-success {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+    
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+    
+    .btn-success:hover {
+        background-color: #218838;
+        transform: translateY(-2px);
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+</style>
+
+<!-- Payment Method Selection Page -->
+{% if request.path == url_for('select_payment_method') %}
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2>Select Payment Method</h2>
+        <form method="POST" action="{{ url_for('select_payment_method') }}">
+            <div class="form-group">
+                <label for="payment_method">Choose a payment method</label>
+                <select name="payment_method" id="payment_method" class="form-control" required>
+                    <option value="COD">Cash on Delivery</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Continue</button>
+        </form>
+    </div>
+</div>
+{% endif %}
+
+<!-- Place Order Page -->
+{% if request.path == url_for('place_order') %}
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2>Review and Place Order</h2>
+        <p><strong>Receiver Name:</strong> {{ session['receiver_name'] }}</p>
+        <p><strong>Mobile Number:</strong> {{ session['mobile_number'] }}</p>
+        <p><strong>Address:</strong> {{ session['address'] }}</p>
+        <p><strong>Landmark:</strong> {{ session['landmark'] }}</p>
+        <p><strong>Payment Method:</strong> {{ session['payment_method'] }}</p>
+        <p><strong>Total Amount:</strong> ₹{{ total_amount }}</p>
+        
+        <form method="POST" action="{{ url_for('place_order') }}">
+            {% if session['payment_method'] == 'COD' %}
+            <button type="submit" class="btn btn-success mt-3">Confirm COD Order</button>
+            {% endif %}
+        </form>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

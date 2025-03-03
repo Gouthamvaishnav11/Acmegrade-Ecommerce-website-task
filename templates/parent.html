@@ -1,0 +1,64 @@
+<!-- parent.html (common template) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block title %}
+        <title>My E-commerce</title>
+    {% endblock title %}
+    
+    {% block style %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    {% endblock %}
+</head>
+<body>
+    <section id="header">
+        <a href="/"><img src="/static/img/logo-removebg-preview 1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                {% if session['role'] == 'vendor' %}
+                    <li><a href="/vendor/add_product">Add Product</a></li>
+                {% endif %}
+                <li><a href="/contact">Contact</a></li>
+                {% if 'user_id' in session %}
+                    <li><a href="/logout">Logout</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
+               
+            </ul>
+        </div>
+    </section>
+    
+    <div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <p class="{{ category }}">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    
+    {% block main %}
+    <main>
+        {% block content %}
+        
+        
+        {% endblock %}
+    </main>
+    {% endblock main %}
+    
+    {% block script %}
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/login.js"></script>
+    {% endblock %}
+</body>
+</html>
