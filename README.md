@@ -47,9 +47,3 @@ python app.py
 - To view the database, open Chrome and search for **"SQLite viewer"**.  
 - Alternatively, visit [SQLite Viewer](https://inloop.github.io/sqlite-viewer/)  and drag the ecommerce.db file into the viewer.  
 
----
-
-### **Explore & Connect**  
-Feel free to explore and interact with the site to learn more about my skills and projects. If you have any questions or feedback, please contact me through the contact form on the website.  
-
-Let me know if you need any modifications! 🚀
